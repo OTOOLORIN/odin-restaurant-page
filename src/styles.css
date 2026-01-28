@@ -1,4 +1,24 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
-  background-color: rebeccapurple;
+  font-family: 'Lato';
+  background-color: antiquewhite;
   font-size: 60px;
+}
+
+#content p:last-of-type {
+  font-family: system-ui;
 }
