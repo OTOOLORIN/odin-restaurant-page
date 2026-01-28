@@ -13,9 +13,18 @@
     font-style: normal;
     font-display: swap;
 }
+
+:root {
+  --primary: #6B8E6E;
+  --background: #FAF7F2;
+  --accent: #C97B63;
+  --text: #2F2F2F;
+  --highlight: #D4B483;
+  
+}
 body {
   font-family: 'Lato';
-  background-color: antiquewhite;
+  background-color: #FAF7F2;
   font-size: 60px;
 }
 
