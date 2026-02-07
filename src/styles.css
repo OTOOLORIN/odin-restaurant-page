@@ -17,7 +17,7 @@
 body {
   font-family: "Playwrite NZ Basic", cursive;
   font-weight: 100;
-  font-size: clamp(1rem, calc(1vw + 1rem), 1.8rem);
+  font-size: clamp(1rem, calc(1vw + 1rem), 1.5rem);
   color: var(--primary-clr);
   background-image: url('../images/background.jpg');
   background-size: cover;
@@ -25,6 +25,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 header {
@@ -32,13 +33,13 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: var(--bgd-dark);
-  padding: min(1em, 3vw) 0 min(0.7em, 3vw) 0;
+  padding: min(0.7em, 5vw) 0 min(0.7em, 3vw) 0;
 }
 
 header h1 {
   font-family: "Tangerine", cursive;
   font-weight: bolder;
-  font-size: clamp(3rem, calc(10vw + 1rem), 10rem);
+  font-size: clamp(3rem, calc(10vw + 1rem), 8rem);
   margin-bottom: min(1rem, 8%);
 }
 
@@ -52,7 +53,7 @@ header nav {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: min(40px, 8%);
+  gap: min(20px, 2%);
 }
 
 header nav button {
@@ -77,23 +78,51 @@ header nav button:first-of-type {
 footer {
   margin-top: auto;
   background-color: var(--bgd-light);
-  padding: min(20px, 5%) min(40px, 10%);
-  font-size: 1.1rem;
+  padding: min(20px, 3%) min(40px, 3%);
+  font-size: clamp(0.5rem, calc(1vw + 5px), 1rem);
   font-weight: 500;
 }
 
-div.copyright-info {
+.copyright-info {
   display: flex;
+  gap: 15px;
 }
 
-div.copyright-info p:last-of-type {
+.copyright-info p:last-of-type {
   margin-left: auto;
 }
 
 a {
   color: white;
 }
+
 i.fa-github {
-  font-size: 24px;
+  font-size: clamp(0.5rem, calc(1vw + 5px), 24px);
   margin-left: 5px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.home {
+  background-color: var(--bgd-light);
+  flex-basis: 700px;
+  text-align: center;
+  padding: min(30px, 10%) 10px;
+}
+
+.home p:first-of-type {
+  margin-bottom: min(20px, 10%);
+}
+
+.img-container {
+  margin: 30px 0;
+}
+.img-container img {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
