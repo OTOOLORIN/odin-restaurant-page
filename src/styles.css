@@ -1,1 +1,72 @@
+:root {
+  --primary-clr: #eee;
+  --primary-clr-dark: #aaa;
+  --border-clr: #222;
+  --bgd-light: rgba(0, 0, 0, 0.6);
+  --bgd-light-hover: rgba(99, 99, 99, 0.4);
+  --bgd-dark: rgba(0, 0, 0, 0.9);
+  --highlight: #d4b483;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playwrite NZ Basic", cursive;
+  font-weight: 100;
+  font-size: clamp(1rem, calc(1vw + 1rem), 1.8rem);
+  color: var(--primary-clr);
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bgd-dark);
+  padding: min(1em, 3vw) 0 min(0.7em, 3vw) 0;
+}
+
+header h1 {
+  font-family: "Tangerine", cursive;
+  font-weight: bolder;
+  font-size: clamp(3rem, calc(10vw + 1rem), 10rem);
+  margin-bottom: min(1rem, 8%);
+}
+
+header h1:hover {
+  color: var(--highlight);
+  margin-right: 10px;
+  transition: all 0.3s ease-in;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: min(40px, 8%);
+}
+
+header nav button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  padding: 0 0.7em 0.5em 0.7em;
+}
+
+header nav button:hover {
+  cursor: pointer;
+  transform: translateY(-7px);
+  transition: transform 0.5s ease-in-out;
+}
+
+header nav button:first-of-type {
+  border-bottom: 3px solid var(--highlight);
+}
