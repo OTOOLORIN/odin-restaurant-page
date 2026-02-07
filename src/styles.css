@@ -44,7 +44,6 @@ body {
 
 .logo-sub {
   display: block;
-  font-family: 'Lato', sans-serif;
   font-size: 1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -62,3 +61,5 @@ body {
   background-color: var(--highlight);
   margin: 0.5rem auto 0;
 }
+
+/*Tab UI style*/
