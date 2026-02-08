@@ -2,7 +2,7 @@ import './styles.css';
 import { addHomeTab, doc, mainContent } from './home.js';
 
 // default page load with home tab
-addHomeTab();
+// addHomeTab();
 
 const tabsCon = doc.querySelector('nav');
 tabsCon.addEventListener('click', (e) => {
