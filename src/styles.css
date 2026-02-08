@@ -41,12 +41,13 @@ header h1 {
   font-weight: bolder;
   font-size: clamp(3rem, calc(10vw + 1rem), 8rem);
   margin-bottom: min(1rem, 8%);
+  transition: margin-right 0.3s ease-in;
 }
 
 header h1:hover {
   color: var(--highlight);
   margin-right: 10px;
-  transition: all 0.3s ease-in;
+  transition: margin-right 0.3s ease-in;
 }
 
 header nav {
@@ -63,15 +64,16 @@ header nav button {
   border: none;
   background: none;
   padding: 0 0.7em 0.5em 0.7em;
+  transition: transform 0.3s 0.2s ease-in;
 }
 
 header nav button:hover {
   cursor: pointer;
   transform: translateY(-7px);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s 0.2s ease-in;
 }
 
-header nav button:first-of-type {
+.active {
   border-bottom: 3px solid var(--highlight);
 }
 
@@ -107,11 +109,15 @@ i.fa-github {
   align-items: center;
   flex-grow: 1;
 }
-.home {
+
+#content > * {
   background-color: var(--bgd-light);
   flex-basis: 700px;
-  text-align: center;
   padding: min(30px, 10%) 10px;
+
+}
+.home {
+  text-align: center;
 }
 
 .home p:first-of-type {
