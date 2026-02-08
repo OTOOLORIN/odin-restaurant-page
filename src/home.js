@@ -1,9 +1,8 @@
 import img from '../images/chef.png';
 
-const doc = document;
-const mainContent = document.querySelector('#content');
-
-function createElementWithClass(tag, ...classes) {
+export const doc = document;
+export const mainContent = document.querySelector('#content');
+export function createElementWithClass(tag, ...classes) {
   const element = doc.createElement(tag);
   if (classes.length > 0) {
     element.classList.add(...classes)
