@@ -64,13 +64,13 @@ header nav button {
   border: none;
   background: none;
   padding: 0 0.7em 0.5em 0.7em;
-  transition: transform 0.3s 0.2s ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 header nav button:hover {
   cursor: pointer;
   transform: translateY(-7px);
-  transition: transform 0.3s 0.2s ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 .active {
@@ -113,11 +113,11 @@ i.fa-github {
 #content > * {
   background-color: var(--bgd-light);
   flex-basis: 700px;
-  padding: min(30px, 10%) 10px;
 
 }
 .home {
   text-align: center;
+  padding: min(30px, 10%) 10px;
 }
 
 .home p:first-of-type {
