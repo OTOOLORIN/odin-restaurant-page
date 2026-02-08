@@ -134,7 +134,7 @@ img {
 }
 
 .contact {
-  padding: min(30px, 10%) min(40px, 10%);
+  padding: min(22px, 10%) min(40px, 10%);
 }
 .contact p:first-of-type {
   margin-bottom: min(15px, 6%);

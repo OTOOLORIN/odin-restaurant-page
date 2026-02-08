@@ -1,5 +1,6 @@
-import { doc, mainContent, createElementWithClass } from './home.js';
+import { mainContent, createElementWithClass } from './home.js';
 import locationImg from '../images/restaurant-location.png';
+
 export function addContactTab() {
   const contactContainer = createElementWithClass('div', 'contact');
   const addressCon = createElementWithClass('address');
