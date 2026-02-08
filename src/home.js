@@ -9,7 +9,7 @@ export function createElementWithClass(tag, ...classes) {
   }
   return element
 }
-function addHomeTab() {
+export function addHomeTab() {
   // create new elements to hold contents
 
   const homeContainer = createElementWithClass('div', 'home');
