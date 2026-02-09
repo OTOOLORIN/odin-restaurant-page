@@ -1,9 +1,10 @@
 import './styles.css';
 import { addHomeTab, doc, mainContent } from './home.js';
 import { addContactTab } from './contact.js';
+import { addMenuTab } from './menu.js';
 
 // default page load with home tab
-// addHomeTab();
+addHomeTab();
 
 const tabsCon = doc.querySelector('nav');
 tabsCon.addEventListener('click', (e) => {
@@ -36,6 +37,7 @@ tabsCon.addEventListener('click', (e) => {
       addContactTab();
       break;
     case 'menu':
-      break
+      addMenuTab();
+      break;
    }
 })
