@@ -107,14 +107,13 @@ i.fa-github {
 
 #content {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
 }
 
 #content > * {
   background-color: var(--bgd-light);
   flex-basis: 700px;
+  margin: auto auto;
 }
 .home {
   text-align: center;
