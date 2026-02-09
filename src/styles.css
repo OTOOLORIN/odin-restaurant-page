@@ -25,7 +25,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: min(65px, 10vw);
 }
 
 header {
@@ -163,6 +163,9 @@ img {
   padding: min(30px, 10vw) min(15px, 5vw);
 }
 
+.dish:hover {
+  background-color: var(--bgd-light-hover);
+}
 .dish p:first-of-type {
   font-weight: 700;
   font-size: clamp(1.5rem, calc(1vw + 0.2rem), 2rem);
@@ -177,9 +180,4 @@ img {
   max-width: 70%;
   margin: 0 auto;
   padding: 0 min(40px, 5vw);
-}
-
-.dish-img img {
-  display: block;
-  max-width: 100%;
 }
