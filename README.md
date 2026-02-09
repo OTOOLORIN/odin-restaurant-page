@@ -2,4 +2,4 @@
 
 Tabbed restaurant page created using HTML, CSS and JS.
 
-[Live preview]
+[Live preview](https://otoolorin.github.io/odin-restaurant-page/)👈
